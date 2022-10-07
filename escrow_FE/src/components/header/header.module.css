@@ -1,0 +1,39 @@
+/* layouts */
+.app_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  box-shadow: 2px 2px 12px lightgray;
+}
+
+.left_header_link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.right_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* component containers  */
+.right_header_link {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 0;
+}
+.logo_text {
+  color: #032f76;
+  font-size: 24px;
+  font-weight: 900;
+  margin-left: 16px;
+}
+
+/* components */
+.logo_img {
+  width: 40px;
+}

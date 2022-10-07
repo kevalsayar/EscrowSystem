@@ -1,0 +1,31 @@
+.body_container {
+  min-height: calc(100vh - 80px);
+  background: linear-gradient(
+      126.39deg,
+      rgba(217, 217, 217, 0) 2.29%,
+      rgba(0, 0, 0, 0.48) 49.47%
+    ),
+    url("/public/assets/images/background-img.jpg") no-repeat center/cover;
+  display: flex !important;
+  justify-content: center !important;
+}
+.bg_none {
+  /* min-height: calc(100vh - 80px); */
+  background: transparent;
+  /* display: flex; */
+  padding-inline: 40px;
+  /* justify-content: center; */
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(175, 175, 175);
+}
+
+/* @media only screen and (max-width: 576px) {
+  .body_container {
+    min-height: 0; 
+  }
+} */

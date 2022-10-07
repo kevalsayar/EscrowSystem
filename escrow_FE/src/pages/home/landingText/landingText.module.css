@@ -1,0 +1,36 @@
+/* components */
+.right_aside{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   max-width: 60vw;
+   text-align: center;
+   margin-left: 40px
+}
+.upper_text, .lower_text{
+   font-size: 34px;
+   font-weight: 400;
+}
+.main_text{
+   font-size: 40px;
+   font-weight: 600;
+}
+
+/* containers */
+.text_container{
+ margin-bottom: 32px;
+}
+
+.text_main_container {
+   display: flex;
+   justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+   .right_aside {
+     display: none;
+   }
+ }

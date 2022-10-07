@@ -1,0 +1,153 @@
+.px_4 {
+  padding-inline: 20px;
+}
+.select_deals {
+  min-width: max-content;
+  border-bottom: 1px solid black;
+}
+.live_deals {
+  margin-right: 18px;
+}
+.active_deal {
+  border-bottom: 3px solid blue;
+  font-weight: bolder;
+}
+.t_head th {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+.t_head tr{
+  background-color: #000046;
+}
+
+.line_height {
+  line-height: 2;
+}
+.cursor_pointer {
+  cursor: pointer;
+}
+.refund_btn {
+  background-color: transparent;
+  border: 2px solid blue;
+  color: blue;
+}
+.accept_btn {
+  background-color: green;
+  color: white;
+  outline: none;
+  border: none;
+}
+.decline_btn {
+  background-color: red;
+  color: white;
+  outline: none;
+  border: none;
+}
+.bolder {
+  font-weight: bolder;
+}
+.lighter {
+  font-weight: 300;
+}
+.custom_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.border_radius_none {
+  border-radius: 0;
+}
+.fix_text_overflow {
+  max-width: 130px;
+  overflow: hidden;
+  word-wrap: break-word;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.list{
+    gap: 22px;
+    font-size: 18px;
+    justify-content: flex-end;
+}
+.list{
+    list-style: none;
+}
+
+.list a {
+    text-decoration: none;
+}
+.selected {
+    background-color: blue;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginations {
+    position: relative;
+    display: flex;
+    list-style: none;
+    right: 0;
+    margin-right: 50px;
+    width: inherit;
+    gap: 10px;
+    padding: 0;
+    justify-content: end;
+}
+
+
+.page_number_box {
+    width: 30px;
+    font-weight: 500;
+    border-radius: 5px;
+    text-align: center;
+    color: #000046;
+}
+
+
+.page_number_box:hover,
+.pre_next_div:hover {
+    background-color: #6b99f5;
+    color: #fff;
+}
+
+
+.pre_next_div {
+    width: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #000046;
+    border-radius: 5px;
+}
+
+
+.page_links {
+    cursor: pointer;
+}
+
+
+.active_page {
+    background-color: black;
+}
+.active_page a{
+    color: white;
+}
+.cursor_notallowed{
+    cursor:not-allowed !important;
+}
+.min_width_220{
+  min-width: 220px;
+}
+.margin_minus40{
+  margin-left: -40px;
+}
+.t_body td{
+  text-align: center;
+  vertical-align: middle;
+}

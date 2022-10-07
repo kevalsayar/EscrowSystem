@@ -1,0 +1,29 @@
+.step_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.main_container {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .step_container {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .step_container {
+    margin: 0;
+  }
+
+  .main_container {
+    margin: 0;
+    border-top: 1px solid #02183b;
+    width: 100%;
+    max-width: none;
+  }
+}

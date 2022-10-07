@@ -1,0 +1,78 @@
+.conatiner_modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backdrop-filter: blur(83px);
+  backdrop-filter: blur(83px);
+  background-color: lightgray;
+  background-color: black;
+  width: 100vw;
+  overflow: hidden;
+  height: calc(100% - 82px);
+  position: absolute;
+  top: 82px;
+  background: linear-gradient(
+      126.39deg,
+      rgba(217, 217, 217, 0) 2.29%,
+      rgba(0, 0, 0, 0.48) 49.47%
+    ),
+    url("/public/assets/images/background-img.jpg") no-repeat center/cover;
+}
+.modal {
+  min-width: 300px;
+  min-height: 311px;
+  border-radius: 8px;
+  background-color: white;
+  width: 400px;
+}
+
+.header {
+  background-color: #02183b;
+  color: white;
+  padding-left: 12px;
+  padding-block: 20px;
+  border-radius: 7px 7px 0px 0px;
+  font-size: 21px;
+  font-weight: 700;
+}
+.modal_body {
+  padding-inline: 25px;
+  padding-block: 20px;
+}
+.btn_custom {
+  border: 0px;
+  padding: 8px 0;
+  background-color: #02183b;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 3px;
+}
+.btn_custom_close {
+  border: 0px;
+  border-radius: 3px;
+  padding: 8px 0;
+  background-color: #d72525;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+.height_40 {
+  height: 40px;
+}
+.passcodes input:active {
+  border: 2px solid #02183b;
+}
+.work_break {
+  word-wrap: break-word;
+}
+.padding_10 {
+  padding-left: 10px;
+}
+
+.tnx_hash{
+  width: 86%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
