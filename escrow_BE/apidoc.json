@@ -1,0 +1,8 @@
+{
+    "name" : "Escrow",
+    "title": "Escrow project",
+    "version" : "2.0.0",
+    "description" : "Blockchain based escrow system",
+    "url" : "http://localhost:3001",
+    "sampleUrl" : "http://localhost:3001"
+}

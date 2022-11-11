@@ -1,0 +1,211 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "address payable",
+                "name": "_seller_address",
+                "type": "address"            },
+            {
+                "internalType": "string",
+                "name": "_deal_id",
+                "type": "string"            },
+            {
+                "internalType": "string",
+                "name": "pass_code",
+                "type": "string"            }
+        ],
+        "name": "acceptDeal",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"    },
+    {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "constructor"    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "_deal_id",
+                "type": "string"            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "buyer_address",
+                "type": "address"            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "seller_address",
+                "type": "address"            },
+            {
+                "indexed": false,
+                "internalType": "enum EscrowV21.DealStatus",
+                "name": "status",
+                "type": "uint8"            }
+        ],
+        "name": "Accepted",
+        "type": "event"    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_deal_id",
+                "type": "string"            },
+            {
+                "internalType": "address payable",
+                "name": "_buyer_address",
+                "type": "address"            },
+            {
+                "internalType": "string",
+                "name": "_passcode",
+                "type": "string"            }
+        ],
+        "name": "fundDeal",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "dealId",
+                "type": "string"            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "buyer",
+                "type": "address"            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"            },
+            {
+                "indexed": false,
+                "internalType": "enum EscrowV21.DealStatus",
+                "name": "status",
+                "type": "uint8"            }
+        ],
+        "name": "Funded",
+        "type": "event"    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_deal_id",
+                "type": "string"            },
+            {
+                "internalType": "string",
+                "name": "pass_code",
+                "type": "string"            }
+        ],
+        "name": "releaseFund",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "_deal_id",
+                "type": "string"            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "buyer_address",
+                "type": "address"            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "seller_address",
+                "type": "address"            },
+            {
+                "indexed": false,
+                "internalType": "enum EscrowV21.DealStatus",
+                "name": "status",
+                "type": "uint8"            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amnount_released",
+                "type": "uint256"            }
+        ],
+        "name": "ReleaseFund",
+        "type": "event"    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_amount",
+                "type": "uint256"            }
+        ],
+        "name": "setMinimumEscrowAmount",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_dealId",
+                "type": "string"            }
+        ],
+        "name": "getMyDealById",
+        "outputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "bytes32",
+                        "name": "passcode",
+                        "type": "bytes32"                    },
+                    {
+                        "internalType": "address payable",
+                        "name": "buyer_address",
+                        "type": "address"                    },
+                    {
+                        "internalType": "address payable",
+                        "name": "seller_address",
+                        "type": "address"                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"                    },
+                    {
+                        "internalType": "enum EscrowV21.DealStatus",
+                        "name": "status",
+                        "type": "uint8"                    }
+                ],
+                "internalType": "struct EscrowV21.DealInfo",
+                "name": "",
+                "type": "tuple"            }
+        ],
+        "stateMutability": "view",
+        "type": "function"    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "deal_id",
+                "type": "string"            },
+            {
+                "internalType": "string",
+                "name": "passcode",
+                "type": "string"            }
+        ],
+        "name": "validateUserForDeal",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"            }
+        ],
+        "stateMutability": "view",
+        "type": "function"    }
+]
